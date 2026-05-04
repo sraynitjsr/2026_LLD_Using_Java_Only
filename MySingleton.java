@@ -1,9 +1,12 @@
 public class MySingleton {
 
+    private static boolean created = false;
+
     private MySingleton() {
-        if (Holder.INSTANCE != null) {
+        if (created) {
             throw new RuntimeException();
         }
+        created = true;
     }
 
     private static class Holder {
