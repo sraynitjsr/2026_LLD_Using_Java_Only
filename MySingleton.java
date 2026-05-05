@@ -20,4 +20,13 @@ public class MySingleton {
     public void showMessage() {
         System.out.println("Singleton instance working!");
     }
+
+    public static void Start() {
+        System.out.println("=== Singleton Pattern ===");
+        MySingleton obj1 = MySingleton.getInstance();
+        MySingleton obj2 = MySingleton.getInstance();
+
+        obj1.showMessage();
+        System.out.println("Same instance? " + (obj1 == obj2));
+    }
 }
