@@ -72,7 +72,9 @@ public class MyBuilder {
         }
     }
 
-    public static void main(String[] args) {
+    public static void Start() {
+        System.out.println("\n=== Builder Pattern ===");
+        
         // Building a basic computer with only required parameters
         Computer basicComputer = new Computer.Builder("Intel i3", "8GB").build();
         System.out.println("Basic Computer: " + basicComputer);
