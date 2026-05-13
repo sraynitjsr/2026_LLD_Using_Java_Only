@@ -5,5 +5,7 @@ public class MyMain {
         MyBuilder.Start();
         
         MyObserver.Start();
+        
+        MyAdapter.Start();
     }
 }
