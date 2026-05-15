@@ -7,5 +7,7 @@ public class MyMain {
         MyObserver.Start();
         
         MyAdapter.Start();
+        
+        MyFactory.Start();
     }
 }
